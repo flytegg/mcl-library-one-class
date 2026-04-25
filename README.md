@@ -4,6 +4,8 @@ A consolidated, single-file version of the [MCLicense library](https://docs.mcli
 
 Copy `MCLicense.java` (Java) or `MCLicense.kt` (Kotlin) directly into your project — no shading or extra dependencies required. All dependencies (`org.json`, Spigot/Paper API) are already present on the server classpath at runtime.
 
+> **Note:** This file will be kept up to date, but by copy-pasting it you'll need to manually check back here for any updates. It's not as simple as bumping a version number in your build tool, so bear that in mind.
+
 ## How to use
 
 See the docs: https://docs.mclicense.org/license-check#checking-a-license
