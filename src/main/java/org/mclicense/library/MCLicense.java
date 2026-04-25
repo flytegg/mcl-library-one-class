@@ -30,9 +30,10 @@ import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
 /**
- * MCLicense - A single-class implementation for license validation.
- * This is a consolidated version of the MCLicense library with all functionality in one file.
- * Perfect for copy-pasting into projects that can't use build tool dependencies.
+ * A single-class implementation for MC License validation in Java.
+ * This is a consolidated version of the official MC License library with all functionality in one file.
+ * Perfect for copy-pasting into projects for those who prefer not to have to shade external dependencies.
+ * 
  */
 public class MCLicense {
     // ==================== Constants ====================

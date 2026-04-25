@@ -5,27 +5,14 @@ Get up and running with MCLicense in 5 minutes!
 ## For Copy-Paste Users
 
 ### 1. Copy the File
-Copy `src/main/java/org/mclicense/library/MCLicense.java` to your plugin project in this directory structure:
+Copy `src/main/java/org/mclicense/library/MCLicense.java` into your project:
 ```
 your-plugin/src/main/java/org/mclicense/library/MCLicense.java
 ```
 
-### 2. Add Dependencies
-Update your `pom.xml`:
-```xml
-<dependency>
-    <groupId>org.json</groupId>
-    <artifactId>json</artifactId>
-    <version>20240303</version>
-</dependency>
-```
+No extra dependencies needed — Paper and `org.json` are already on the Paper server classpath.
 
-Or `build.gradle`:
-```gradle
-implementation("org.json:json:20240303")
-```
-
-### 3. Use in Your Plugin
+### 2. Use in Your Plugin
 ```java
 import org.mclicense.library.MCLicense;
 
@@ -41,7 +28,7 @@ public class MyPlugin extends JavaPlugin {
 }
 ```
 
-### 4. Add License File
+### 3. Add License File
 Players place their license key in: `plugins/MyPlugin/mclicense.txt`
 
 That's it! Your plugin is licensed.

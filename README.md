@@ -24,37 +24,9 @@ The single-class version consolidates all functionality from the modular MCLicen
 
 ### 1. Copy the Class
 
-Simply copy `src/main/java/org/mclicense/library/MCLicense.java` into your project.
+Copy `src/main/java/org/mclicense/library/MCLicense.java` into your project at `org/mclicense/library/MCLicense.java`. That's it — no extra dependencies needed, Paper and `org.json` are already on the Paper server classpath.
 
-### 2. Add Dependencies
-
-You'll need the following libraries in your classpath:
-
-```xml
-<!-- Maven -->
-<dependency>
-    <groupId>io.papermc.paper</groupId>
-    <artifactId>paper-api</artifactId>
-    <version>1.20.1-R0.1-SNAPSHOT</version>
-    <scope>provided</scope>
-</dependency>
-<dependency>
-    <groupId>org.json</groupId>
-    <artifactId>json</artifactId>
-    <version>20240303</version>
-</dependency>
-```
-
-Or for Gradle:
-
-```gradle
-dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT")
-    implementation("org.json:json:20240303")
-}
-```
-
-### 3. Use in Your Plugin
+### 2. Use in Your Plugin
 
 ```java
 import org.mclicense.library.MCLicense;

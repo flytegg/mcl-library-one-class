@@ -32,50 +32,9 @@ For Maven projects, this is typically `src/main/java/org/mclicense/library/`
 
 Copy the `MCLicense.java` file into your `org/mclicense/library/` directory.
 
-### Step 4: Add Dependencies
+> No extra dependencies needed — Paper and `org.json` are already on the Paper server classpath.
 
-Add the required dependencies to your `pom.xml` or `build.gradle`:
-
-**Maven (pom.xml):**
-
-```xml
-<dependencies>
-    <dependency>
-        <groupId>io.papermc.paper</groupId>
-        <artifactId>paper-api</artifactId>
-        <version>1.20.1-R0.1-SNAPSHOT</version>
-        <scope>provided</scope>
-    </dependency>
-    <dependency>
-        <groupId>org.json</groupId>
-        <artifactId>json</artifactId>
-        <version>20240303</version>
-    </dependency>
-</dependencies>
-
-<repositories>
-    <repository>
-        <id>papermc-repo</id>
-        <url>https://repo.papermc.io/repository/maven-public/</url>
-    </repository>
-</repositories>
-```
-
-**Gradle (build.gradle):**
-
-```gradle
-dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT")
-    implementation("org.json:json:20240303")
-}
-
-repositories {
-    maven("https://repo.papermc.io/repository/maven-public/")
-    mavenCentral()
-}
-```
-
-### Step 5: Use the MCLicense class
+### Step 4: Use the MCLicense class
 
 In your main plugin class, import and use MCLicense:
 
@@ -96,7 +55,7 @@ public class YourPlugin extends JavaPlugin {
 }
 ```
 
-### Step 6: Build your project
+### Step 5: Build your project
 
 Build your plugin as usual:
 
@@ -118,11 +77,6 @@ After copying, you should be able to:
 
 - Ensure you've placed MCLicense.java in the correct package directory
 - Rebuild your project: `mvn clean build` or `gradle clean build`
-
-### "Missing required dependencies"
-
-- Make sure you've added the Paper API and org.json dependencies to your build file
-- Add the PaperMC repository to your pom.xml or build.gradle
 
 ### "Unsupported class version"
 
