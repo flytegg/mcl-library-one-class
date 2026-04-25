@@ -25,16 +25,6 @@ import java.util.UUID
 import java.util.concurrent.TimeUnit
 import java.util.logging.Logger
 
-/**
- * A single-class implementation for MC License validation in Kotlin.
- * This is a consolidated version of the official MC License library with all functionality in one file.
- * Perfect for copy-pasting into projects for those who prefer not to have to shade external dependencies.
- *
- * All required dependencies (Paper API, org.json) are already available on the Paper server classpath at
- * runtime, so this class should compile and run without needing to bundle any additional libraries.
- *
- * For usage instructions, see: https://docs.mclicense.org/license-check#checking-a-license
- */
 object MCLicense {
 
     // ==================== Constants ====================
