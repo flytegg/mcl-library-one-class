@@ -1,0 +1,15 @@
+name: "MCLicense Single Class Example"
+version: "1.0.0"
+description: "Example plugin using the MCLicense single-class implementation"
+authors: [ "Your Name" ]
+main: org.example.BasicUsageExample
+commands:
+  setlicense:
+    description: "Set the plugin license key"
+    usage: /setlicense <key>
+    permission: plugin.setlicense
+    permission-message: "You don't have permission to use this command"
+permissions:
+  plugin.setlicense:
+    description: "Allows setting the plugin license"
+    default: op
