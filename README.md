@@ -1,10 +1,10 @@
-# MCLicense - Single Class
+# MC License - Single Class
 
-A consolidated, single-file version of the [MCLicense library](https://docs.mclicense.org), aimed at developers who are having trouble shading the library into their plugin via Gradle/Maven, or simply prefer not to manage external dependencies at all.
+A consolidated, single-file version of the [MC License library](https://docs.mclicense.org), aimed at developers who are having trouble shading the library into their plugin via Gradle/Maven, or simply prefer not to manage external dependencies at all.
 
 Copy `MCLicense.java` (Java) or `MCLicense.kt` (Kotlin) directly into your project — no shading or extra dependencies required. All dependencies (`org.json`, Spigot/Paper API) are already present on the server classpath at runtime.
 
-> **Note:** This file will be kept up to date, but by copy-pasting it you'll need to manually check back here for any updates. It's not as simple as bumping a version number in your build tool, so bear that in mind.
+> **Note:** By copy-pasting it you'll need to manually check back here for any updates. It's not as simple as bumping a version number in your build tool, so bear that in mind.
 
 ## How to use
 
