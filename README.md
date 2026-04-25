@@ -2,7 +2,7 @@
 
 A consolidated, single-file version of the [MCLicense library](https://docs.mclicense.org).
 
-Copy `src/main/java/org/mclicense/library/MCLicense.java` directly into your project � no shading or extra dependencies required. All dependencies (`org.json`, Paper API) are already present on the Paper server classpath at runtime.
+Copy `MCLicense.java` (Java) or `MCLicense.kt` (Kotlin) directly into your project — no shading or extra dependencies required. All dependencies (`org.json`, Paper API) are already present on the Paper server classpath at runtime.
 
 ## How to use
 
